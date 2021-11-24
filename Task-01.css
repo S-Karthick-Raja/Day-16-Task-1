@@ -1,0 +1,82 @@
+.Highlight{
+    color: red;
+}
+.checked{
+    color: rgb(238, 172, 130);
+}
+.fix{
+    display: inline-block;
+    width: 21%;
+    margin-left: 0.5%;
+}
+.fix-letter{
+    display: inline-block;
+    width: 19%;
+    margin-left: 0.5%;
+}
+.letter-spacing{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 75px;
+}
+.spacing{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 130px;
+}
+.Paragraph{
+    width: 98%;
+    background: #e5e5e5;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.No-Paragraph{
+    width: 98%;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.Text-box{
+    height: 100px;
+    width: 98%;
+}
+.submit-button{
+    margin-top: 10px;
+}
+
+.rate {
+    float: left;
+    height: 20px;
+    padding: 0 5px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-5000px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: rgb(238, 172, 130);    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: rgb(238, 172, 130);  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: rgb(238, 172, 130);
+}
+
